@@ -75,15 +75,18 @@ export function Hero() {
               </a>
             </div>
 
-            <div className="mt-10 grid max-w-lg grid-cols-3 gap-3 text-left">
-              {site.stats.slice(0, 3).map((stat) => (
-                <div key={stat.label} className="rounded-sm border border-white/10 bg-black/25 px-3 py-4 backdrop-blur-sm">
-                  <div className="display text-3xl text-white">
-                    {stat.value}
-                    {stat.suffix}
-                  </div>
-                  <div className="mt-1 text-[10px] uppercase tracking-[0.22em] text-steel">{stat.label}</div>
-                </div>
+            <div className="mt-10 flex flex-wrap gap-3 text-left">
+              {[
+                "Strength",
+                "Conditioning",
+                "Mobility",
+              ].map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-white/10 bg-black/25 px-3 py-2 text-[10px] uppercase tracking-[0.22em] text-steel backdrop-blur-sm"
+                >
+                  {tag}
+                </span>
               ))}
             </div>
           </div>
@@ -103,8 +106,7 @@ export function Hero() {
                   Results-driven
                 </div>
                 <div className="mt-3 flex items-baseline gap-2">
-                  <span className="display text-4xl leading-none text-white">500+</span>
-                  <span className="text-sm text-steel">athletes</span>
+                  <span className="display text-2xl leading-none text-white">Open 7 Days</span>
                 </div>
               </div>
             </div>
