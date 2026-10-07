@@ -1,0 +1,102 @@
+export const site = {
+  name: "Iron Heaven",
+  legalName: "Iron Heaven Fitness Pvt. Ltd.",
+  domain: "https://www.ironheaven.com",
+  tagline: "Forge Your Strength",
+  description:
+    "Iron Heaven is a premium strength gym with elite equipment, certified trainers, biometric entry, and memberships built for real results. Train hard. Get stronger.",
+  phone: "9876543210",
+  phoneDisplay: "+91 98765 43210",
+  whatsapp: "919876543210",
+  email: "hello@ironheaven.com",
+  address: {
+    street: "4R8M+5FH, SH 13",
+    locality: "Pipili",
+    region: "Odisha",
+    postalCode: "752104",
+    country: "IN",
+    full: "4R8M+5FH, SH 13, Pipili, Odisha 752104",
+  },
+  mapEmbedUrl:
+    "https://maps.google.com/maps?q=4R8M%2B5FH%2C+SH+13%2C+Pipili%2C+Odisha+752104&z=16&output=embed",
+  mapsLink: "https://maps.app.goo.gl/oLGZGCpRSuE9VTES6",
+  social: {
+    instagram: "https://instagram.com/ironheaven",
+    facebook: "https://facebook.com/ironheaven",
+    youtube: "https://youtube.com/@ironheaven",
+  },
+  hours: [
+    { days: "Monday – Friday", open: "05:30", close: "22:30", label: "5:30 AM – 10:30 PM" },
+    { days: "Saturday", open: "06:00", close: "22:00", label: "6:00 AM – 10:00 PM" },
+    { days: "Sunday", open: "07:00", close: "14:00", label: "7:00 AM – 2:00 PM" },
+  ] as const,
+  timezone: "Asia/Kolkata",
+  stats: [
+    { label: "Members", value: 500, suffix: "+" },
+    { label: "Trainers", value: 10, suffix: "+" },
+    { label: "Years", value: 5, suffix: "+" },
+    { label: "Equipment", value: 100, suffix: "+" },
+  ],
+  plans: [
+    {
+      id: "monthly",
+      name: "Monthly",
+      price: "₹2,999",
+      period: "/month",
+      popular: false,
+      features: [
+        "Unlimited gym access",
+        "Cardio + strength floors",
+        "Locker & shower access",
+        "Fitness assessment",
+        "Member app check-in",
+      ],
+    },
+    {
+      id: "quarterly",
+      name: "Quarterly",
+      price: "₹7,499",
+      period: "/3 months",
+      popular: true,
+      features: [
+        "Everything in Monthly",
+        "2 personal training sessions",
+        "Nutrition starter plan",
+        "Steam room access",
+        "Guest pass once a month",
+      ],
+    },
+    {
+      id: "yearly",
+      name: "Yearly",
+      price: "₹21,999",
+      period: "/year",
+      popular: false,
+      features: [
+        "Everything in Quarterly",
+        "8 personal training sessions",
+        "Priority class booking",
+        "Free Iron Heaven tee",
+        "Freeze membership 30 days",
+      ],
+    },
+  ],
+  goals: [
+    "Build muscle",
+    "Lose fat",
+    "Get stronger",
+    "Improve stamina",
+    "Train for a sport",
+    "General fitness",
+  ],
+} as const;
+
+export const navLinks = [
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#facilities", label: "Facilities" },
+  { href: "#trainers", label: "Trainers" },
+  { href: "#plans", label: "Plans" },
+  { href: "#gallery", label: "Gallery" },
+  { href: "#contact", label: "Contact" },
+] as const;
